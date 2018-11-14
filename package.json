@@ -1,0 +1,25 @@
+{
+  "name": "mcprint-maqueta",
+  "version": "1.0.0",
+  "description": "Maqueta de un comercio electronico",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucyloules/McPrints-Maquetado.git"
+  },
+  "keywords": [
+    "ecommerce"
+  ],
+  "author": "Lucia Lagos Allendes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lucyloules/McPrints-Maquetado/issues"
+  },
+  "homepage": "https://github.com/lucyloules/McPrints-Maquetado#readme",
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.5.0"
+  }
+}
