@@ -21,5 +21,8 @@
   "homepage": "https://github.com/lucyloules/McPrints-Maquetado#readme",
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.5.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.1.3"
   }
 }
