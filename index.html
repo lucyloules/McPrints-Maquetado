@@ -22,144 +22,186 @@
 <!-- MAIN HEADER -->
   <div class="bg-dark" id="header">
     <div class="container bg-dark text-white">
-      <div class="d-flex flex-row justify-content-between">
+      <div class="d-flex flex-row">
       <!-- LOGO -->
-        <div class="p-2 bd-highlight ">
+        <div class="p-2 bd-highlight mr-auto ">
           <div class="header-logo">
             <a href="#" class="logo text-white">
               <img src="assets/img/logo.jpg" alt="Logo">
             </a>
-        </div>Brand
-      </div>
+          </div>Brand
+        </div>
       <!-- End LOGO --> 
 
-      <!-- SEARCH BAR -->
- 
+        <!-- ACCOUNT -->
+         <div class="p-2 bd-highlight ">
+                <a class="btn btn-primary" data-toggle="collapse" href="#collapseAccount" role="button" aria-expanded="false"
+                  aria-controls="collapseExample">
+                  <i class="fa fa-user-o text-white"></i>
+                  <span class="">Mi cuenta</span>
+                </a>
+                <div class="collapse" id="collapseAccount">
+                  <div class="card card-body">
+                    <div class="">
+                      <form class="">
+                        <div class="form-group">
+                          <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+                        </div>
+                        <div class="form-group">
+                          <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+                        </div>
+                        <div class="form-check">
+                          <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                          <label class="form-check-label" for="dropdownCheck">
+                            Recuérdame
+                          </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Ingresa</button>
+                      </form>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Nuevo aquí? Registrate</a>
+                      <a class="dropdown-item" href="#">Olvidaste la contraseña?</a>
+                    </div> 
+                  </div>
+                </div>
+         </div>
+        <!-- /ACCOUNT -->
 
-      <!-- ACCOUNT -->
-
-    <div class="p-2 bd-highlight text-white row account">
-      <!-- Account -->
+        <!-- CART -->
         <div class="p-2 bd-highlight ">
-            <a class="btn btn-primary" data-toggle="collapse" href="#collapseAccount" role="button" aria-expanded="false"
-              aria-controls="collapseExample">
-              <i class="fa fa-user-o text-white"></i>
-              <span class="">Mi cuenta</span>
-            </a>
-            <div class="collapse" id="collapseAccount">
-              <div class="card card-body">
-                <div class="">
-                   <form class="">
-                     <div class="form-group">
-                       <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
-                     </div>
-                     <div class="form-group">
-                       <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
-                     </div>
-                     <div class="form-check">
-                       <input type="checkbox" class="form-check-input" id="dropdownCheck">
-                       <label class="form-check-label" for="dropdownCheck">
-                         Recuérdame
-                       </label>
-                     </div>
-                     <button type="submit" class="btn btn-primary">Ingresa</button>
-                   </form>
-                   <div class="dropdown-divider"></div>
-                   <a class="dropdown-item" href="#">Nuevo aquí? Registrate</a>
-                   <a class="dropdown-item" href="#">Olvidaste la contraseña?</a>
-                 </div> 
+          <a class="btn btn-primary" data-toggle="collapse" href="#collapseCart" role="button" aria-expanded="false"
+            aria-controls="collapseExample">
+            <i class="fa fa-bag text-white"></i>
+            <span class="">Mi Carrito</span>
+            <span class="badge badge-danger badge-pill">3</span>
+          </a>
+            <div class="collapse w-auto" id="collapseCart">
+
+            <div class="card text-black-50 d-flex row justify-content-start">
+              <div class="card-body no-paddin">
+                <div class="img-product">
+                 <img src="assets/img/" alt="product-img">
+                </div>
+                <span class="badge badge-primary badge-pill">2</span>
+                <h6 class="card-title">Producto</h6>
+                <span class="card-text">$4990</span>
+                <a href="#" class="btn btn-primary">Ver</a>
               </div>
             </div>
-          <a href="#">
-            <div class="account"></div>
-          </a>
+
+            <div class="card text-black-50 d-flex row justify-content-start">
+              <div class="card-body">
+                <div class="img-product">
+                  <img src="assets/img/" alt="product-img">
+                </div>
+                <span class="badge badge-primary badge-pill">1</span>
+                <h6 class="card-title">Producto</h6>
+                <span class="card-text">$4990</span>
+                <a href="#" class="btn btn-primary">Ver</a>
+              </div>
+            </div>
+
+            <div class="dropdown-divider"></div>
+            <div class="summary">
+                <small>3 Item(s) Seleccionados</small>
+                <h6>Total: $19.900</h6>
+            </div>
+            <div class="cart-buttons">
+              <a class="btn btn-primary" href="">Ver Compras</a>
+              <a class="btn btn-primary" href="">Pagar
+                <i class="fa fa-arrow-alt-circle-right"></i>
+              </a>
+            </div>
+            </div>
         </div>
-      </div>
 
-
-      <!-- /ACCOUNT -->
-
-      <!-- Cart -->
-      <div class="dropdown">
-      <a class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" href="#">
-        <span class="caret"></span>
-      </a>
-      <ul class="dropdown-menu">
-        <li><a class="nav-link" href="#">Nombre del Producto</a></li>
-        <li><a class="nav-link" href="#">Choice2</a></li>
-        <li><a class="nav-link" href="#">Choice3</a></li>
-      </ul>
-<!--         <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">
-          <i class="shopping-bag"></i>
-          <div class="qty">3</div>
-          <span>Your Cart</span>
-        </button>
-        <div class="dropdown-toggle" aria-labelledby="dropdownMenuButton">
-         <div class="dropdown-cart"> Productos del carrito
-            <ul class="list-group product-list">
-              <div class="list-group-item d-flex justify-content-between align-items-center product-cart">
-               <div class="product-img">
-                <img src="./img/product01.png" alt="">
-               </div>
-               <div class="product-details">
-                 <h5 class="product-name">
-                   <a href="#">Nombre Producto</a>
-                 </h5>
-                 <h4 class="product-price">
-                  <span class="badge badge-primary badge-pill">14</span>
-                </h4>
-               </div>
-                <span type="button" class="badge badge-primary badge-pill delete">x</span>
-                <button class="delete"><i class="fa fa-close"></i></button>
-             </div>
-           </ul>
-         </div>
-        </div>
-      </div> -->
-      <!-- /Cart -->
 
     </div>
 <!-- ACCOUNT -->
+
     </div>
   </div>
 </div>
-
-<!-- /SEARCH BAR -->
-<nav class="bg-ligth d-flex row">
-<div class="p-2 bd-highlight text-white ">
-  <div class="header-search d-flex justify-content-around">
-    <!-- dropdown -->
-    <div class="dropdown">
-      <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-        aria-haspopup="true" aria-expanded="false">
-        Categories
-      </button>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item" href="#">All Categories</a>
-        <a class="dropdown-item" href="#">Category One</a>
-        <a class="dropdown-item" href="#">Category Two</a>
+  </header>
+  <!-- /SEARCH BAR -->
+  <nav class="bg-ligth d-flex row">
+    <div class="p-2 bd-highlight text-white ">
+      <div class="header-search d-flex justify-content-around">
+        <!-- dropdown -->
+        <div class="dropdown">
+          <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Categories
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">All Categories</a>
+            <a class="dropdown-item" href="#">Category One</a>
+            <a class="dropdown-item" href="#">Category Two</a>
+          </div>
+        </div>
+        <!-- /Dropdown -->
+        <!-- Form search -->
+        <form class="form-inline">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        <!-- /Form search -->
       </div>
     </div>
-    <!-- /Dropdown -->
-    <!-- Form search -->
-    <form class="form-inline">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-    <!-- /Form search -->
+  </nav>
+  <!-- /SEARCH BAR -->
+<!-- Nuevos Productos -->
+<section class="container" id="top" >
+  <h4>Nuevos Productos</h4>
+  <div class="card-deck justify-content-around">
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src=".../100px180/" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Product</h5>
+        <p class="card-text">Descripción del producto.</p>
+        <a href="#" class="btn btn-primary">Comprar</a>
+      </div>
+    </div>
+    
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src=".../100px180/" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Product</h5>
+        <p class="card-text">Descripción del producto.</p>
+        <a href="#" class="btn btn-primary">Comprar</a>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src=".../100px180/" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Product</h5>
+        <p class="card-text">Descripción del producto.</p>
+        <a href="#" class="btn btn-primary">Comprar</a>
+      </div>
+    </div>
+    
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src=".../100px180/" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Product</h5>
+        <p class="card-text">Descripción del producto.</p>
+        <a href="#" class="btn btn-primary">Comprar</a>
+      </div>
+    </div>
   </div>
-</div>
-<!-- /SEARCH BAR -->
-</nav>
-  </header>
+  
+
+</section>
 
   <!-- Slider  -->
-<section id="slider">Slider</section>
+<section class="container" id="slider">
+<h4>Slider</h4>
+</section>
 <!-- Categorias -->
-<section id="categories">Categorias</section>
-<!-- Top vendidos -->
-<section id="top" >Top Más Vendidos</section>
+<section class="container" id="categories">
+  <h4>Categorias</h4>
+</section>
 
 
 <!-- FOOTER -->
