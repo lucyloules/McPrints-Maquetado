@@ -41,31 +41,36 @@
     <div class="p-2 bd-highlight text-white row account">
       <!-- Account -->
         <div class="p-2 bd-highlight ">
-            <div class="dropdown-menu">
-              <form class="px-4 py-3">
-                <div class="form-group">
-                  <label for="exampleDropdownFormEmail1">Email address</label>
-                  <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
-                </div>
-                <div class="form-group">
-                  <label for="exampleDropdownFormPassword1">Password</label>
-                  <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
-                </div>
-                <div class="form-check">
-                  <input type="checkbox" class="form-check-input" id="dropdownCheck">
-                  <label class="form-check-label" for="dropdownCheck">
-                    Remember me
-                  </label>
-                </div>
-                <button type="submit" class="btn btn-primary">Sign in</button>
-              </form>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">New around here? Sign up</a>
-              <a class="dropdown-item" href="#">Forgot password?</a>
+            <a class="btn btn-primary" data-toggle="collapse" href="#collapseAccount" role="button" aria-expanded="false"
+              aria-controls="collapseExample">
+              <i class="fa fa-user-o text-white"></i>
+              <span class="">Mi cuenta</span>
+            </a>
+            <div class="collapse" id="collapseAccount">
+              <div class="card card-body">
+                <div class="">
+                   <form class="">
+                     <div class="form-group">
+                       <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+                     </div>
+                     <div class="form-group">
+                       <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+                     </div>
+                     <div class="form-check">
+                       <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                       <label class="form-check-label" for="dropdownCheck">
+                         Recuérdame
+                       </label>
+                     </div>
+                     <button type="submit" class="btn btn-primary">Ingresa</button>
+                   </form>
+                   <div class="dropdown-divider"></div>
+                   <a class="dropdown-item" href="#">Nuevo aquí? Registrate</a>
+                   <a class="dropdown-item" href="#">Olvidaste la contraseña?</a>
+                 </div> 
+              </div>
             </div>
           <a href="#">
-              <i class="fa fa-user-o text-white"></i></a></li>
-              <span class="">My Account</span>
             <div class="account"></div>
           </a>
         </div>
